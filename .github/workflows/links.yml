@@ -1,0 +1,14 @@
+name: link-check
+on:
+  push: { branches: [main] }
+  schedule: [{ cron: "0 4 * * 1" }]
+  workflow_dispatch:
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: lycheeverse/lychee-action@v2
+        with:
+          args: --no-progress --max-retries 3 --timeout 30 --user-agent "Mozilla/5.0 (X11; Linux x86_64) Chrome/126" --accept 200,201,204,206,301,302,403,429 README.md
+          fail: true
