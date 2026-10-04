@@ -472,5 +472,13 @@ Give it a dedicated wallet with spend limits and allowlisted contracts (e.g. a s
 
 Contributions welcome: add a question with an accurate, sourced answer and a link to go deeper. Text CC BY 4.0. Attribute Blockchain Lab.
 
+## Licence
+
+Text CC BY 4.0 (attribute Blockchain Lab), code MIT. See [LICENSE](LICENSE).
+
+## Contributing
+
+Issues and pull requests are welcome. Please read the [contributing guide](https://github.com/Blockchains/.github/blob/main/CONTRIBUTING.md), [code of conduct](https://github.com/Blockchains/.github/blob/main/CODE_OF_CONDUCT.md) and [security policy](https://github.com/Blockchains/.github/blob/main/SECURITY.md) first.
+
 ---
 Built by Blockchain Lab — [blockchainlab.com](https://blockchainlab.com/?utm_source=github&utm_medium=readme&utm_campaign=blockchain-interview-questions)
