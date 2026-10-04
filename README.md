@@ -472,6 +472,37 @@ Give it a dedicated wallet with spend limits and allowlisted contracts (e.g. a s
 
 Contributions welcome: add a question with an accurate, sourced answer and a link to go deeper. Text CC BY 4.0. Attribute Blockchain Lab.
 
+<!-- blocks:start -->
+## Use as a building block
+
+> **For AI agents and builders:** read [`AGENTS.md`](AGENTS.md) (setup, commands, structure, rules), [`llms.txt`](llms.txt) (doc map) and the machine-readable [`blocks.json`](blocks.json) ([schema](https://github.com/Blockchains/.github/blob/main/docs/BLOCKS-SCHEMA.md)). How all Blockchains blocks fit together: **[Build with Blocks](https://github.com/Blockchains/.github/blob/main/docs/BUILD-WITH-BLOCKS.md)** · org catalogue: [https://blockchains.github.io/blocks.json](https://blockchains.github.io/blocks.json).
+
+**What it exports**
+
+| Export | Type | Install / access |
+|---|---|---|
+| `README.md` | file | `https://raw.githubusercontent.com/Blockchains/blockchain-interview-questions/main/README.md` |
+
+**Minimal example**
+
+```bash
+curl -s https://raw.githubusercontent.com/Blockchains/blockchain-interview-questions/main/README.md | grep -o '<b>[0-9]*\. [^<]*' | head
+```
+
+**Inputs → outputs**
+
+- In: none
+- Out: `questions` (Markdown) each item links to a lab, a tool or a Blockchain Lab explainer
+
+**Composes with**
+
+- [Blockchains/blockchainlab-labs](https://github.com/Blockchains/blockchainlab-labs): hands-on labs linked from each item
+- [Blockchains/blockchainlab-tools](https://github.com/Blockchains/blockchainlab-tools): tools linked from each item
+- [Blockchains/blockchain-dev-roadmap](https://github.com/Blockchains/blockchain-dev-roadmap): companion guide
+
+**Versioning & stability:** `stable`. Content is revised in place; headings/anchors are kept stable so deep links keep working.
+<!-- blocks:end -->
+
 ## Licence
 
 Text CC BY 4.0 (attribute Blockchain Lab), code MIT. See [LICENSE](LICENSE).

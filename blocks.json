@@ -1,0 +1,56 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Blockchains/.github/main/docs/blocks.schema.json",
+  "schema_version": "1.0",
+  "name": "blockchain-interview-questions",
+  "repo": "Blockchains/blockchain-interview-questions",
+  "summary": "54 blockchain and smart-contract interview questions with concise answers, each linked to a runnable lab, a free tool or an explainer.",
+  "kind": [
+    "docs",
+    "dataset"
+  ],
+  "stability": "stable",
+  "license": "MIT AND CC-BY-4.0",
+  "entrypoints": [
+    {
+      "type": "file",
+      "name": "README.md",
+      "ref": "README.md",
+      "usage": "https://raw.githubusercontent.com/Blockchains/blockchain-interview-questions/main/README.md"
+    }
+  ],
+  "inputs": [],
+  "outputs": [
+    {
+      "name": "questions",
+      "type": "Markdown",
+      "description": "each item links to a lab, a tool or a Blockchain Lab explainer"
+    }
+  ],
+  "deps": [
+    "none"
+  ],
+  "compatible_with": [
+    {
+      "repo": "Blockchains/blockchainlab-labs",
+      "how": "hands-on labs linked from each item"
+    },
+    {
+      "repo": "Blockchains/blockchainlab-tools",
+      "how": "tools linked from each item"
+    },
+    {
+      "repo": "Blockchains/blockchain-dev-roadmap",
+      "how": "companion guide"
+    }
+  ],
+  "tests": {
+    "command": "lychee README.md   # link check, see .github/workflows/links.yml",
+    "ci": ".github/workflows/links.yml",
+    "network": true
+  },
+  "docs": {
+    "readme": "README.md",
+    "agents": "AGENTS.md",
+    "llms": "llms.txt"
+  }
+}
